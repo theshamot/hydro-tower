@@ -11,7 +11,7 @@ const unsigned long HOUR = 60 * MINUTE;
 
 const unsigned long PRERUN_NOTIFICATION = 1 * SECOND;
 const unsigned long RUN_TIME = 1 * MINUTE - PRERUN_NOTIFICATION;
-const unsigned long PAUSE_TIME = 15 * HOUR - RUN_TIME;
+const unsigned long PAUSE_TIME = 5 * HOUR - RUN_TIME;
 const unsigned long NIGHT_TIME = 9 * HOUR;
 const unsigned long DAY_TIME = 24 * HOUR - NIGHT_TIME;
 unsigned long DAY_RUN_TIME_COUNTER = 0;
@@ -49,6 +49,6 @@ void loop() {
     delay(RUN_TIME);
     analogWrite(MOTOR, 0);
     delay(PAUSE_TIME);
-    DAY_RUN_TIME_COUNTER += RUN_TIME + PRERUN_NOTIFICATION + PAUSE_TIME;
+    DAY_RUN_TIME_COUNTER += PRERUN_NOTIFICATION + RUN_TIME + PAUSE_TIME;
   }
 }
