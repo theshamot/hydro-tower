@@ -10,9 +10,9 @@ const unsigned long MINUTE = 60 * SECOND;
 const unsigned long HOUR = 60 * MINUTE;
 
 const unsigned long PRERUN_NOTIFICATION = 1 * SECOND;
-const unsigned long RUN_TIME = 1 * MINUTE - PRERUN_NOTIFICATION;
-const unsigned long PAUSE_TIME = 5 * HOUR - RUN_TIME;
-const unsigned long NIGHT_TIME = 9 * HOUR;
+const unsigned long RUN_TIME = 1 * MINUTE + 20 * SECOND - PRERUN_NOTIFICATION;
+const unsigned long PAUSE_TIME = 7 * HOUR - RUN_TIME;
+const unsigned long NIGHT_TIME = 10 * HOUR;
 const unsigned long DAY_TIME = 24 * HOUR - NIGHT_TIME;
 unsigned long DAY_RUN_TIME_COUNTER = 0;
 
