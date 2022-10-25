@@ -2,7 +2,7 @@ const int MOTOR = 11;
 const int RGBLED = 10;
 const int POT = A0;
 
-const int MOTOR_OK_FLOW = 107;
+const int MOTOR_OK_FLOW = 120;
 const int MOTOR_NOTIFICATION = 70;
 
 const unsigned long SECOND = 1000;
@@ -10,9 +10,9 @@ const unsigned long MINUTE = 60 * SECOND;
 const unsigned long HOUR = 60 * MINUTE;
 
 const unsigned long PRERUN_NOTIFICATION = 1 * SECOND;
-const unsigned long RUN_TIME = 1 * MINUTE + 20 * SECOND - PRERUN_NOTIFICATION;
-const unsigned long PAUSE_TIME = 7 * HOUR - RUN_TIME;
-const unsigned long NIGHT_TIME = 10 * HOUR;
+const unsigned long RUN_TIME = 1 * MINUTE + 30 * SECOND - PRERUN_NOTIFICATION;
+const unsigned long PAUSE_TIME = 13 * HOUR - RUN_TIME;
+const unsigned long NIGHT_TIME = 11 * HOUR;
 const unsigned long DAY_TIME = 24 * HOUR - NIGHT_TIME;
 unsigned long DAY_RUN_TIME_COUNTER = 0;
 
