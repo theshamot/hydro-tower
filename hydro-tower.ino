@@ -2,7 +2,7 @@ const int MOTOR = 11;
 const int RGBLED = 10;
 const int POT = A0;
 
-const int MOTOR_OK_FLOW = 120;
+const int MOTOR_OK_FLOW = 110;
 const int MOTOR_NOTIFICATION = 70;
 
 const unsigned long SECOND = 1000;
